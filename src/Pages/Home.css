@@ -1,0 +1,412 @@
+/* 
+.overlay{
+    position: relative;
+}
+
+.overlay h2{
+    position: absolute;
+    width: 100%;
+    height: 15px;
+   color: rgb(15, 15, 15);
+margin-top: 50px;
+text-align: center;
+}
+ 
+.overlay img{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+} */
+
+*{
+    padding: 0px;
+    margin: 0px;
+  
+      font-family: "Belleza", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+  
+}
+
+.body{
+    height: 100%;
+}
+
+.parallax-header{
+    background: #000;
+    background: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.8)
+    ),
+    url('https://themesarea.com/heaven/wp-content/uploads/2020/07/slide1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content{
+    padding: 100px 0 150px 0;
+}
+
+#content{
+    margin-top: -80px;
+    box-shadow: 0 0 20px -6px rgba(92, 89, 89, 0.952);
+    background-color: #000000;
+   color: #ffffff;
+}
+
+#content .left{
+    padding-top: 20px;
+}
+
+#content .right{
+    padding: 0;
+}
+.text-justify{
+    text-align: justify;
+}
+
+#content .bottom{
+    background: #bbae93;
+    padding: 20px;
+}
+
+.primary-color{
+    color: bisque;
+}
+
+/* adding images */
+#img1{
+    background-image: url('https://t3.ftcdn.net/jpg/01/83/63/78/360_F_183637844_v44raKnyUILQAHd5K20c7t8ZUwqeLKy7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+height: 400px;
+}
+#img2{
+    background-image: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXR5JTIwc2Fsb258ZW58MHx8MHx8fDA%3D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+height: 400px;
+}
+#img3{
+    background-image: url('https://comfortel.com.au/wp-content/uploads/2020/10/SOW-x-Comfortel-Salon-Design.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+height: 400px;
+}
+
+.scrollEffect{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.block{
+    background-color: #eaf3f3;
+    /* background-color:  #abd6d8; */
+    color: rgb(2, 2, 2);
+    height: 30rem;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+}
+
+.service{
+    text-align: center;
+    justify-content: center;
+    margin-left: 40px;
+  margin-top: 20px;
+}
+
+section.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 110px;
+    background-color: hwb(0 95% 5%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #000000;
+    background-color: #f2f2f2;
+    color: #111111;
+  }
+  
+  .card__content {
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.4;
+  }
+  /* Commands to change the shadows in dark mode
+  @media (prefers-color-scheme: dark) {
+    .card:hover {
+    box-shadow: 0 8px 16px #000000;
+    }
+  }*/
+  
+
+  button {
+    position: relative;
+    padding: 15px 45px;
+    background: #b1e1e2;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    cursor: pointer;
+    border: 1px solid #e2dedc;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  }
+  
+  button:hover {
+    border: 1px solid  #bfe6e9;
+    background: linear-gradient(
+      85deg,
+      #b2dfe2,
+      #b2dfe2,
+      #b2dfe2,
+      #b2dfe2,
+      #b2dfe2
+    );
+    animation: wind 2s ease-in-out infinite;
+  }
+  
+  @keyframes wind {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    0% {
+      background-position: 50% 100%;
+    }
+  
+    0% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .icon-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    transform-origin: 0 0;
+    transform: rotate(10deg);
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+  }
+  
+  button:hover .icon-1 {
+    animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+    transform: rotate(10deg);
+  }
+  
+  @keyframes slay-1 {
+    0% {
+      transform: rotate(10deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .icon-2 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 12px;
+    transform-origin: 50% 0;
+    transform: rotate(10deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+  }
+  
+  button:hover .icon-2 {
+    animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(15deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  .icon-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    transform-origin: 50% 0;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+  }
+  
+  button:hover .icon-3 {
+    animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #ffffff;
+    background-color: #b2dfe2;
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 450px;
+  }
+  
+  .form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #b1d4cc;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+  }
+  
+  .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #e7eeee;
+    box-shadow: inset 2px 5px 10px rgb(207, 231, 233);
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+  }
+  
+  .sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #000000;
+    font-weight: bold;
+    outline: 1px solid #d9eee9;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(220, 231, 231);
+  }
+  
+  .form-card1 {
+    background-image: linear-gradient(163deg, #c7e6de 0%, #ffffff 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+  }
+  
+  .form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+  }
+  
+  .form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+  }
+  
+  .form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  
